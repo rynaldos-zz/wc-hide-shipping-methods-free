@@ -6,7 +6,7 @@ Requires at least: 4.5.0
 Tested up to: 4.7.3
 Stable tag: trunk
 WC requires at least: 2.6
-WC tested up to: 3.0.1
+WC tested up to: 3.0.3
 License: GPLv3 or later License
 URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,7 @@ This plugin lets you hide all other shipping methods / rates when “free shippi
 
 == Description ==
 
-This plugin, when activated, automatically hides all other shipping methods / rates when “free shipping” is triggered and available during checkout process. It also includes an option to keep “local pickup” available when free shipping is available.
+This plugin, when activated, automatically hides all other shipping methods / rates when “free shipping” is triggered and available during checkout process. It also includes an option to keep “local pickup” available when free shipping is triggered.
 
 * Compatible with new WooCommerce shipping zones
 
@@ -24,7 +24,7 @@ This plugin, when activated, automatically hides all other shipping methods / ra
 
 1. Download the plugin & install it to your `wp-content/plugins` folder (or use the Plugins menu through the WordPress Administration section)
 2. Activate the plugin
-3. Navigate to **WooCommerce > Settings > Shipping > Shipping options**.
+3. Navigate to ** WooCommerce > Settings > Shipping > Shipping options **.
 4. Select your option.
 5. Save and enjoy!
 
