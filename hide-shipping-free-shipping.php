@@ -7,6 +7,7 @@
  Author: Rynaldo Stoltz
  Author URI: https://github.com/rynaldos
  Version: 1.0
+ Text Domain: wc-hide-shipping-methods
  License: GPLv3 or later License
  URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
@@ -32,16 +33,16 @@ function rs_woo_account_settings( $settings ) {
      * Check the current section is what we want
      **/
 
-        $settings[] = array( 'title' => __( 'Hide shipping methods', 'woocommerce' ), 'type' => 'title', 'id' => 'wc_hide_shipping' );
+        $settings[] = array( 'title' => __( 'Hide shipping methods', 'wc-hide-shipping-methods' ), 'type' => 'title', 'id' => 'wc_hide_shipping' );
 
 
         $settings[] = array(
-                'title'    => __( 'When "Free Shipping" is available during checkout: ', 'woocommerce' ),
-                'desc'     => __( '', 'woocommerce' ),
+                'title'    => __( 'When "Free Shipping" is available during checkout: ', 'wc-hide-shipping-methods' ),
+                'desc'     => '',
                 'id'       => 'wc_hide_shipping_options',
                 'type'     => 'radio',
                 'desc_tip' => true,
-                'options'  => array( 'hide_all' => 'Hide all other shipping methods and only show "Free Shipping"', 'hide_except_local' => 'Hide all other shipping methods and only show "Free Shipping" and "Local Pickup" ' ),
+                'options'  => array( 'hide_all' => __( 'Hide all other shipping methods and only show "Free Shipping"', 'wc-hide-shipping-methods' ), 'hide_except_local' => __( 'Hide all other shipping methods and only show "Free Shipping" and "Local Pickup"', 'wc-hide-shipping-methods' ) ),
             );
 
         $settings[] = array( 'type' => 'sectionend', 'id' => 'wc_hide_shipping' );
