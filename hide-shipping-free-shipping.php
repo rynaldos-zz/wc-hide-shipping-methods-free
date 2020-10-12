@@ -78,17 +78,17 @@ function wc_hide_shipping_when_free_is_available_keep_local( $rates, $package ) 
         }
     }
 
-    if ( ! empty( $new_rates ) ) {
-        foreach ( $rates as $rate_id => $rate ) {
-            if ('local_pickup' === $rate->method_id ) {
-                $new_rates[ $rate_id ] = $rate;
-                break;
-            }
-        }
-        return $new_rates;
+    if ( empty( $new_rates ) ) {
+        return $rates;
     }
 
-    return $rates;
+    foreach ( $rates as $rate_id => $rate ) {
+        if ( 'local_pickup' === $rate->method_id ) {
+            $new_rates[ $rate_id ] = $rate;
+        }
+    }
+
+    return $new_rates;
               }
         }
 }
